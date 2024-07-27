@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header>
+    <header class="container">
+        <div class="header__wrapper">
         <div class="header__logo-wrap">
-        <a class="logo">Brit<span class="logo-grey">lex</span></a>
+        <a class="header__logo">Brit<span class="header__logo-grey">lex</span></a>
     </div>
     <nav class="header__nav">
         <ul class="header__list">
@@ -37,7 +38,6 @@
     <div class="header__btn-wrap">
         <button class="header__btn">Let`s Talk</button>
     </div>
-
     <div class="menu__open-wrap">
         <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu__open-icon" width="33" height="19">
@@ -47,8 +47,8 @@
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="menu-close-wrap">
-            <button class="menu-button js-close-menu">
-                <svg class="menu__close-icon" width="24" height="24">
+            <button class="menu__button js-close-menu">
+                <svg class="menu__close-icon" width="14" height="14">
                     <use href="./imges/symbol-defs.svg#icon-cross"></use>
                 </svg>
             </button>
@@ -73,12 +73,13 @@
             </ul>
         </nav>
         <div class="menu__btn-wrap">
-            <button class="menu__btn">Let`s Talk</button>
+            <button class="menu__final-btn">Let`s Talk</button>
         </div>
     </div>
+</div>
     </header>
 <main>
-    <section class="hero">
+    <section class="hero container">
         <div class="hero__img-wrap">
             <picture class="hero__img">
                 <source srcset="./imges/hero-sm@1x-min.png 1x, ./imges/hero-sm@2x-min.png 2x" type="image/png" media="min-width: 320px">
@@ -91,11 +92,45 @@
             <h2 class="hero__title">Learn Any Foreign Language</h2>
             <p class="hero__text">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
             <div class="hero__btn-wrap">
-                <button class="hero__btn">Get Started</button>
+                <button class="hero__btn" type="button" data-modal-open>Get Started</button>
+            </div>
+        </div>
+        <div class="backdrop is-hidden" data-modal> 
+            <div class="modal">
+                <div class="modal__close-wrap">
+                <button data-modal-close type="button" class="modal__close">
+                     <svg class="modal__icon" width="24" height="24">
+                        <use href="./imges/symbol-defs.svg#icon-cross"></use>
+                    </svg> 
+                </button>
+            </div>
+            <h2 class="modal__title">Fill this form</h2>
+            <form class="modal__form">
+                <label class="modal__item">
+                    <input type="text" class="modal__input" placeholder="Your Name">
+                </label>
+                <label class="modal__item">
+                    <input type="email" class="modal__input" placeholder="Your E-mail">
+                </label>
+                <label class="modal__item">
+                    <input type="password" class="modal__input" placeholder="Your Password">
+                </label>
+            </form>
+            <div class="modal__confirm-wrap">
+                <input type="checkbox" class="modal__confirm">
+                <span class="modal__confirm-describe">I confirm and accept all 
+                    <a href="#" class="modal__privacy">privacy</a>
+                     and 
+                     <a href="#" class="modal___policy">policy</a>
+                    </span>
+            </div>
+            <div class="modal__btn-wrap">
+                <button class="modal__btn">Start</button>
+            </div>
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills container">
         <h2 class="skills__title">Skills</h2>
         <ul class="skills__list">
             <li class="skills__speaking">
@@ -170,7 +205,7 @@
             </li>
         </ul>
     </section>
-    <section class="about">
+    <section class="about container">
         <h2 class="about__title">About Us</h2>
         <div class="about__img-wrap">
             <picture class="about__img">
@@ -205,7 +240,7 @@ expectations of both users and the customer.
             </li>
         </ul>
     </section>
-    <section class="pricing">
+    <section class="pricing container">
         <h2 class="pricing__title">Pricing</h2>
         <ul class="pricing__list">
             <li class="pricing__item">
@@ -262,7 +297,7 @@ expectations of both users and the customer.
         </li>
         </ul>
     </section>
-    <section class="contact">
+    <section class="contact container">
         <h2 class="contact__title">Contact Us</h2>
         <div class="contact__img-wrap">
             <picture class="contact__img">
@@ -281,12 +316,24 @@ expectations of both users and the customer.
                     <input type="email" class="contact__input" placeholder="Enter Your E-mail">
                 </label>
                 <div class="contact__btn-wrap">
-                    <button class="contact__btn">Subscribe</button>
+                    <button thank-modal-open class="contact__btn" type="button">Subscribe</button>
                 </div>
             </form>
+            <div class="backdrop is-hidden" thank-modal> 
+                <div class="thank">
+                    <div class="modal__close-wrap">
+                    <button thank-modal-close type="button" class="modal__close">
+                         <svg class="modal__icon" width="24" height="24">
+                            <use href="./imges/symbol-defs.svg#icon-cross"></use>
+                        </svg> 
+                    </button>
+                </div>
+                <h2 class="thank__title">Thank you for subscribtion</h2>
+                </div>
+            </div>
     </section>
 </main>
-<footer>
+<footer class="container">
     <div class="footer__logo-wrap">
         <a class="logo">Brit<span class="logo-grey">lex</span></a>
     </div>
@@ -302,5 +349,8 @@ expectations of both users and the customer.
         </li>
     </ul>
 </footer>
+<script type="module" src="./js/mobile.js"></script>
+<script type="module" src="./js/modal.js"></script>
+<script type="module" src="./js/thank.js"></script>
 </body>
 </html>
