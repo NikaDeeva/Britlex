@@ -1,0 +1,102 @@
+.skills{
+    padding-top: 91px;
+    padding-bottom: 57px;
+    &__title{
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__speaking,
+    &__listening,
+    &__reading{
+        background-color: $secondaryBackground;
+        padding-top: 16px;
+        padding-bottom: 45px;
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-top: 21px;
+    }
+    &__writing{
+        background-color: $secondaryBackground;
+        padding-top: 16px;
+        padding-bottom: 45px;
+        margin-top: 21px;
+        padding-right: 45px;
+        padding-left: 45px;
+        
+    }
+    &__img{
+        max-width: 213px;
+    }
+    &__subtitle{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 80px;
+    }
+    &__text{
+        font-size: 12px;
+        font-weight: 400;
+        color: $text;
+        max-width: 288px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+    &__text-secondary{
+        font-size: 13px;
+        font-weight: 400;
+        color: $text;
+        padding-top: 35px;
+        max-width: 288px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+    &__btn{
+        border: 1px solid $btn;
+        border-radius: 5px;
+        background-color: $btn;
+        color: $btnText;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 14px 43px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+        margin-top: 45px;
+    }
+    &__btn:hover,
+    &__btn:focus{
+        background-color: transparent;
+        color: $btn;
+    }
+}
+@media screen and (min-width: 575px){
+    .skills{
+        padding-top: 96px;
+        padding-bottom: 84px;
+        &__title{
+            font-size: 30px;
+        }
+        &__speaking,
+        &__listening,
+        &__reading,
+        &__writing{
+            padding-top: 16px;
+            padding-bottom: 45px;
+            padding-right: 16px;
+            padding-left: 16px;
+            margin-top: 34px;
+        }
+        &__img{
+            max-width: 185px;
+        }
+        &__text{
+            max-width: 185px;
+        }
+    }
+}
