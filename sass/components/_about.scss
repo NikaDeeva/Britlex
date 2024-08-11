@@ -1,0 +1,128 @@
+.about{
+    padding-top: 51px;
+    padding-bottom: 84px;
+    &__title{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 80px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__img-wrap{
+        margin: 0 auto;
+        max-width: 283px;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        color: $text;
+        padding-top: 24px;
+        line-height: 20px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__number{
+        line-height: 80px;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+    }
+    &__describe{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: $text;
+    }
+}
+@media screen and (min-width: 575px){
+    .about{
+        padding-top: 84px;
+        padding-bottom: 131px;
+        &__title{
+            font-size: 30px;
+        }
+        &__text{
+            font-size: 14px;
+            max-width: 500px;
+        }
+        &__list{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .about {
+      padding-top: 106px;
+      padding-bottom: 125px;
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start;
+    
+  
+    &__title {
+      font-size: 36px;
+      text-align: start;
+      order: 1;
+      margin-bottom: 0;
+    }
+  
+    &__img-wrap {
+      order: 3;
+      position: absolute;
+      left: 400px;
+    }
+  
+    &__text {
+      order: 2;
+      max-width: 400px;
+      padding-top: 0;
+    }
+    &__list{
+        order: 4;
+        justify-content: flex-start;
+    }
+    &__item:not(:first-child){
+        margin-left: 82px;
+    }
+}
+  }
+  @media screen and (min-width:1200px){
+    .about{
+        padding-top: 280px;
+        padding-bottom: 251px;
+        &__title{
+            font-size: 48px;
+            margin-bottom: 24px;
+        }
+        &__img-wrap{
+            left: 900px;
+        }
+        &__text{
+            font-size: 20px;
+            max-width: 635px;
+            line-height: 30px;
+            text-align: start;
+            margin-bottom: 70px;
+        }
+        &__number{
+            font-size: 48px;
+        }
+        &__describe{
+            font-size: 20px;
+        }
+    }
+  }
