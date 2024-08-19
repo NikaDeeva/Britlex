@@ -10,7 +10,7 @@
     }
     &__img-wrap{
         margin: 0 auto;
-        max-width: 283px;
+        max-width: 383px;
     }
     &__img{
         width: 100%;
@@ -83,13 +83,14 @@
     &__img-wrap {
       order: 3;
       position: absolute;
-      left: 400px;
+      left: 550px;
     }
   
     &__text {
       order: 2;
       max-width: 400px;
       padding-top: 0;
+      text-align: start;
     }
     &__list{
         order: 4;

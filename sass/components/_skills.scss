@@ -1,6 +1,4 @@
 .skills{
-    padding-top: 91px;
-    padding-bottom: 57px;
     &__title{
         font-size: 24px;
         font-weight: 600;
@@ -21,6 +19,7 @@
         padding-right: 16px;
         padding-left: 16px;
         margin-top: 21px;
+        border-radius: 10px;
     }
     &__writing{
         background-color: $secondaryBackground;
@@ -29,6 +28,7 @@
         margin-top: 21px;
         padding-right: 45px;
         padding-left: 45px;
+        border-radius: 10px;
         
     }
     &__img{
@@ -77,10 +77,13 @@
 }
 @media screen and (min-width: 575px){
     .skills{
-        padding-top: 96px;
-        padding-bottom: 84px;
         &__title{
             font-size: 30px;
+        }
+        &__list{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
         &__speaking,
         &__listening,
@@ -92,11 +95,110 @@
             padding-left: 16px;
             margin-top: 34px;
         }
+        &__writing > .skills__text{
+            margin-bottom: 160px;
+        }
         &__img{
             max-width: 185px;
         }
-        &__text{
+        &__text, &__text-secondary{
             max-width: 185px;
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .skills{
+        position: relative;
+        &__list{
+            align-items: flex-start;
+        }
+        &__speaking{
+            padding-left: 22px;
+            padding-right: 21px;
+            padding-bottom: 52px;
+        }
+        &__writing{
+            padding-right: 44px;
+            padding-left: 53px;
+            padding-bottom: 30px;
+        }
+        &__writing > .skills__text{
+            margin-bottom: 0px;
+        }
+        &__writing > .skills__subtitle{
+            line-height: 40px;
+        }
+        &__reading{
+            padding-left: 23px;
+            padding-right: 38px;
+            padding-bottom: 32px;
+            padding-top: 16px;
+        }
+        &__listening{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-left: 32px;
+            padding-right: 18px;
+            padding-bottom: 34px;
+            position: absolute;
+            top: 585px;
+            left: 350px;
+        }
+        &__wrapper > .skills__text{
+            max-width: 320px;
+        }
+        &__wrapper > .skills__subtitle{
+            line-height: 45px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__subtitle{
+            font-size: 22px;
+        }
+        &__btn{
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .skills{
+        &__list{
+            flex-wrap: nowrap;
+        }
+        &__speaking{
+            padding-bottom: 92px;
+            padding-top: 35px;
+            padding-right: 0;
+        }
+        &__writing{
+            padding-top: 0;
+            padding-right: 0;
+            padding-left: 15px;
+            padding-bottom: 30px;
+        }
+        &__reading{
+            padding-top: 0;
+            padding-right: 0;
+            padding-left: 15px;
+            padding-bottom: 30px;
+        }
+        &__listening{
+            top: 625px;
+            left: 450px;
+            padding-right: 0;
+            padding-left: 10px;
+        }
+        &__btn{
+            margin-top: 35px;
+        }
+        &__text, &__text-secondary{
+            min-width: 350px;
+            font-size: 16px;
+        }
+        &__subtitle{
+            font-size: 30px;
         }
     }
 }

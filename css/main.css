@@ -321,6 +321,14 @@ p {
     padding-top: 11px;
     padding-bottom: 96px;
   }
+  .hero__img-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .hero__img {
     max-width: 425px;
   }
@@ -354,6 +362,9 @@ p {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero__title {
     font-size: 48px;
@@ -605,10 +616,6 @@ p {
     padding: 20px 70px;
   }
 }
-.skills {
-  padding-top: 91px;
-  padding-bottom: 57px;
-}
 .skills__title {
   font-size: 24px;
   font-weight: 600;
@@ -634,6 +641,7 @@ p {
   padding-right: 16px;
   padding-left: 16px;
   margin-top: 21px;
+  border-radius: 10px;
 }
 .skills__writing {
   background-color: #F5F5F5;
@@ -642,6 +650,7 @@ p {
   margin-top: 21px;
   padding-right: 45px;
   padding-left: 45px;
+  border-radius: 10px;
 }
 .skills__img {
   max-width: 213px;
@@ -688,12 +697,18 @@ p {
 }
 
 @media screen and (min-width: 575px) {
-  .skills {
-    padding-top: 96px;
-    padding-bottom: 84px;
-  }
   .skills__title {
     font-size: 30px;
+  }
+  .skills__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .skills__speaking, .skills__listening, .skills__reading, .skills__writing {
     padding-top: 16px;
@@ -702,11 +717,118 @@ p {
     padding-left: 16px;
     margin-top: 34px;
   }
+  .skills__writing > .skills__text {
+    margin-bottom: 160px;
+  }
   .skills__img {
     max-width: 185px;
   }
-  .skills__text {
+  .skills__text, .skills__text-secondary {
     max-width: 185px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .skills {
+    position: relative;
+  }
+  .skills__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .skills__speaking {
+    padding-left: 22px;
+    padding-right: 21px;
+    padding-bottom: 52px;
+  }
+  .skills__writing {
+    padding-right: 44px;
+    padding-left: 53px;
+    padding-bottom: 30px;
+  }
+  .skills__writing > .skills__text {
+    margin-bottom: 0px;
+  }
+  .skills__writing > .skills__subtitle {
+    line-height: 40px;
+  }
+  .skills__reading {
+    padding-left: 23px;
+    padding-right: 38px;
+    padding-bottom: 32px;
+    padding-top: 16px;
+  }
+  .skills__listening {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 32px;
+    padding-right: 18px;
+    padding-bottom: 34px;
+    position: absolute;
+    top: 585px;
+    left: 350px;
+  }
+  .skills__wrapper > .skills__text {
+    max-width: 320px;
+  }
+  .skills__wrapper > .skills__subtitle {
+    line-height: 45px;
+  }
+  .skills__text {
+    font-size: 14px;
+  }
+  .skills__subtitle {
+    font-size: 22px;
+  }
+  .skills__btn {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .skills__speaking {
+    padding-bottom: 92px;
+    padding-top: 35px;
+    padding-right: 0;
+  }
+  .skills__writing {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 15px;
+    padding-bottom: 30px;
+  }
+  .skills__reading {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 15px;
+    padding-bottom: 30px;
+  }
+  .skills__listening {
+    top: 625px;
+    left: 450px;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  .skills__btn {
+    margin-top: 35px;
+  }
+  .skills__text, .skills__text-secondary {
+    min-width: 350px;
+    font-size: 16px;
+  }
+  .skills__subtitle {
+    font-size: 30px;
   }
 }
 .about {
@@ -722,7 +844,7 @@ p {
 }
 .about__img-wrap {
   margin: 0 auto;
-  max-width: 283px;
+  max-width: 383px;
 }
 .about__img {
   width: 100%;
@@ -822,7 +944,7 @@ p {
         -ms-flex-order: 3;
             order: 3;
     position: absolute;
-    left: 400px;
+    left: 550px;
   }
   .about__text {
     -webkit-box-ordinal-group: 3;
@@ -830,6 +952,7 @@ p {
             order: 2;
     max-width: 400px;
     padding-top: 0;
+    text-align: start;
   }
   .about__list {
     -webkit-box-ordinal-group: 5;
