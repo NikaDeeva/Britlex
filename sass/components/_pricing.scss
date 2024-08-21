@@ -1,0 +1,149 @@
+.pricing{
+    padding-bottom: 72px;
+    &__title{
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item{
+        margin-top: 63px;
+    }
+    &__img-wrap{
+        display: flex;
+        justify-content: center;
+    }
+    &__subtitle{
+        font-size: 18px;
+        text-align: center;
+        font-weight: 600;
+        line-height: 28px;
+        margin-top: 28px;
+        margin-bottom: 17px;
+    }
+    &__text{
+        font-weight: 400;
+        color: $text;
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 33px;
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        background-color: $background;
+        border-radius: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 170px;
+        margin: 0 auto;
+    }
+    &__number{
+        color: $secondaryTitle;
+        font-size: 18px;
+        font-weight: 400;
+        padding-right: 10px;
+        padding-left: 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+    &__describe{
+        color: $secondaryText;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+@media screen and (min-width: 575px){
+    .pricing{
+        margin-bottom: 163px;
+        &__title{
+            font-size: 30px;
+        }
+        &__item{
+            margin-top: 71px;
+        }
+        &__subtitle{
+            font-size: 24px;
+            margin-bottom: 23px;
+        }
+        &__text{
+            font-size: 14px;
+            max-width: 450px;
+        }
+        &__price{
+            width: 205px;
+        }
+        &__number{
+            font-size: 22px;
+        }
+        &__describe{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .pricing{
+        margin-bottom: 136px;
+        &__title{
+            font-size: 36px;
+        }
+        &__list{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        &__img-wrap{
+            justify-content: flex-start;
+        }
+        &__subtitle{
+            font-size: 22px;
+            margin-bottom: 14px;
+            margin-top: 20px;
+            text-align: start;
+        }
+        &__text{
+            font-size: 16px;
+            text-align: start;
+            max-width: 300px;
+            line-height: 25px;
+        }
+        &__price{
+            margin: 0;
+        }
+        &__number{
+            font-size: 24px;
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .pricing{
+        margin-bottom: 257px;
+        &__title{
+            font-size: 48px;
+        }
+        &__item{
+            margin-top: 83px;
+        }
+        &__subtitle{
+            font-size: 30px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-size: 20px;
+        }
+        &__price{
+            width: 240px;
+        }
+        &__number{
+            font-size: 30px;
+        }
+        &__describe{
+            font-size: 18px;
+        }
+    }
+}
