@@ -1164,4 +1164,128 @@ p {
   .pricing__describe {
     font-size: 18px;
   }
+}
+.contact {
+  margin-bottom: 57px;
+}
+.contact__title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.contact__img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact__text {
+  color: #8F95A5;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 36px;
+  margin-bottom: 33px;
+  max-width: 300px;
+}
+.contact__input {
+  border-radius: 5px;
+  border: 1px solid #8F95A5;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  padding-right: 156px;
+  max-width: 290px;
+}
+.contact__input::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8F95A5;
+}
+.contact__input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8F95A5;
+}
+.contact__input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8F95A5;
+}
+.contact__input::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8F95A5;
+}
+.contact__input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8F95A5;
+}
+.contact__btn {
+  border: 1px solid #263238;
+  border-radius: 5px;
+  background-color: #263238;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 110px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  -webkit-transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+  margin-top: 17px;
+}
+.contact__btn:hover, .contact__btn:focus {
+  background-color: transparent;
+  color: #263238;
+}
+
+@media screen and (min-width: 575px) {
+  .contact {
+    margin-bottom: 144px;
+  }
+  .contact__title {
+    font-size: 30px;
+    margin-bottom: 107px;
+  }
+  .contact__text {
+    font-size: 16px;
+    margin-top: 34px;
+    margin-bottom: 60px;
+    max-width: 515px;
+  }
+  .contact__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .contact__input {
+    border-right: none;
+    max-width: 610px;
+  }
+  .contact__btn {
+    margin-top: 0;
+    padding: 17px 60px;
+    position: absolute;
+    bottom: 0.1px;
+    right: 20px;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,89 @@
+.contact{
+    margin-bottom: 57px;
+    &__title{
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+    &__img-wrap{
+        display: flex;
+        justify-content: center;
+    }
+    &__text{
+        color: $text;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 36px;
+        margin-bottom: 33px;
+        max-width: 300px;
+    }
+    &__input{
+        border-radius: 5px;
+        border: 1px solid $text;
+        background-color: transparent;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 26px;
+        padding-right: 156px;
+        max-width: 290px;
+        &::placeholder{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: $text;
+        }
+    }
+    &__btn{
+        border: 1px solid $btn;
+        border-radius: 5px;
+        background-color: $btn;
+        color: $btnText;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 20px 110px;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+        margin-top: 17px;
+    }
+    &__btn:hover,
+    &__btn:focus{
+        background-color: transparent;
+        color: $btn;
+    }
+}
+@media screen and (min-width: 575px){
+    .contact{
+        margin-bottom: 144px;
+        &__title{
+            font-size: 30px;
+            margin-bottom: 107px;
+        }
+        &__text{
+            font-size: 16px;
+            margin-top: 34px;
+            margin-bottom: 60px;
+            max-width: 515px;
+        }
+        &__form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        &__input{
+            border-right: none;
+            max-width: 610px;
+        }
+        &__btn{
+            margin-top: 0;
+            padding: 17px 60px;
+            position: absolute;
+            bottom: 0.1px;
+            right: 20px;
+            font-size: 16px;
+        }
+    }
+}

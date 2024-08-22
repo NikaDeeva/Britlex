@@ -327,7 +327,7 @@ expectations of both users and the customer.
             and free resource</p>
             <form class="contact__form">
                 <label>
-                    <input type="email" class="contact__input" placeholder="Enter Your E-mail">
+                    <input type="email" class="contact__input" placeholder="Enter Your E-mail" required>
                 </label>
                 <div class="contact__btn-wrap">
                     <button thank-modal-open class="contact__btn" type="button">Subscribe</button>
@@ -335,14 +335,12 @@ expectations of both users and the customer.
             </form>
             <div class="backdrop is-hidden" thank-modal> 
                 <div class="thank">
-                    <div class="modal__close-wrap">
-                    <button thank-modal-close type="button" class="modal__close">
-                         <svg class="modal__icon" width="24" height="24">
-                            <use href="./imges/symbol-defs.svg#icon-cross"></use>
-                        </svg> 
+                <h2 class="thank__title">Thank you for subscribtion!</h2>
+                <div class="thank__close-wrap">
+                    <button thank-modal-close type="button" class="thank__close">
+                         You`re Welcome
                     </button>
                 </div>
-                <h2 class="thank__title">Thank you for subscribtion</h2>
                 </div>
             </div>
     </section>
