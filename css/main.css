@@ -1277,7 +1277,6 @@ p {
     position: relative;
   }
   .contact__input {
-    border-right: none;
     max-width: 610px;
   }
   .contact__btn {
@@ -1287,5 +1286,110 @@ p {
     bottom: 0.1px;
     right: 20px;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact {
+    padding-bottom: 157px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: absolute;
+    font-size: 36px;
+    left: 410px;
+    margin-bottom: 250px;
+  }
+  .contact__text {
+    padding-top: 25px;
+    text-align: start;
+    font-size: 16px;
+    max-width: 450px;
+    line-height: 25px;
+  }
+  .contact__form {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact__input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 170px;
+  }
+  .contact__input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .contact__input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .contact__input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .contact__input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .contact__input::placeholder {
+    font-size: 14px;
+  }
+  .contact__btn {
+    position: relative;
+    right: 0;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding-bottom: 133px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact__img-wrap {
+    margin-right: 100px;
+  }
+  .contact__title {
+    font-size: 48px;
+    left: 600px;
+  }
+  .contact__text {
+    font-size: 20px;
+    max-width: 800px;
+  }
+  .contact__input {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 33px;
+    padding-right: 265px;
+  }
+  .contact__input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .contact__input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .contact__input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .contact__input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .contact__input::placeholder {
+    font-size: 16px;
+  }
+  .contact__btn {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=main.css.map */
