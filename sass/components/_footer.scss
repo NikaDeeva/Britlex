@@ -1,0 +1,70 @@
+.footer{
+    padding-top: 26px;
+    padding-bottom: 46px;
+    border-top: 1px solid $border;
+    &__logo-wrap{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    &__logo{
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Poppins';
+        color: $title;
+        margin-left: 14px;
+        text-align: start;
+        cursor: pointer;
+    }
+    &__logo-grey{
+        color: $logo;
+    }
+    &__link{
+        color: $text;
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width: 575px){
+    .footer{
+        padding-top: 24px;
+        padding-bottom: 26px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo{
+            font-size: 30px;
+            margin-left: 32px;
+        }
+        &__link{
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .footer{
+        padding-top: 22px;
+        padding-bottom: 24px;
+        &__logo{
+            margin-left: 0;
+        }
+        &__link{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .footer{
+        padding-top: 33px;
+        padding-bottom: 62px;
+        &__logo{
+            font-size: 36px;
+        }
+        &__link{
+            font-size: 18px;
+        }
+    }
+}
