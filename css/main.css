@@ -622,6 +622,7 @@ p {
   color: #fff;
   padding: 12px 40px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 575px) {

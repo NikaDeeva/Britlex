@@ -9,6 +9,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+    </style>
 </head>
 <body>
     <header class="container">
@@ -22,16 +27,16 @@
                 <a href="./index.html" class="header__link">Home</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Skills</a>
+                <a href="#skills" class="header__link">Skills</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">About us</a>
+                <a href="#about" class="header__link">About us</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Pricing</a>
+                <a href="#pricing" class="header__link">Pricing</a>
             </li>
             <li class="header__item">
-                <a href="#" class="header__link">Contacts</a>
+                <a href="#contact" class="header__link">Contacts</a>
             </li>
         </ul>
     </nav>
@@ -110,13 +115,13 @@
             <h2 class="modal__title">Fill this form</h2>
             <form class="modal__form">
                 <label class="modal__item">
-                    <input type="text" class="modal__input" placeholder="Your Name">
+                    <input type="text" class="modal__input" placeholder="Your Name" id="name">
                 </label>
                 <label class="modal__item">
-                    <input type="email" required class="modal__input" placeholder="Your E-mail">
+                    <input type="email" required class="modal__input" placeholder="Your E-mail" id="mail">
                 </label>
                 <label class="modal__item">
-                    <input type="password" class="modal__input" placeholder="Your Password">
+                    <input type="password" class="modal__input" placeholder="Your Password" id="password">
                 </label>
             </form>
             <div class="modal__confirm-wrap">
@@ -125,15 +130,15 @@
                     <a href="#" class="modal__privacy">privacy</a>
                      and 
                      <a href="#" class="modal__policy">policy</a>
-                    </span>
+                </span>
             </div>
             <div class="modal__btn-wrap">
-                <button class="modal__btn">Start!</button>
+                <button class="modal__btn" onclick="checkForm()" type="button">Start!</button>
             </div>
             </div>
         </div>
     </section>
-    <section class="skills container">
+    <section class="skills container" id="skills">
         <h2 class="skills__title">Skills</h2>
         <ul class="skills__list">
             <li class="skills__speaking">
@@ -214,7 +219,7 @@
             </li>
         </ul>
     </section>
-    <section class="about container">
+    <section class="about container" id="about">
         <h2 class="about__title">About Us</h2>
         <div class="about__img-wrap">
             <picture class="skills__img">
@@ -250,7 +255,7 @@ expectations of both users and the customer.
             </li>
         </ul>
     </section>
-    <section class="pricing container">
+    <section class="pricing container" id="pricing">
         <h2 class="pricing__title">Pricing</h2>
         <ul class="pricing__list">
             <li class="pricing__item">
@@ -310,7 +315,7 @@ expectations of both users and the customer.
         </li>
         </ul>
     </section>
-    <section class="contact container">
+    <section class="contact container" id="contact">
         <h2 class="contact__title">Contact Us</h2>
         <div class="contact__img-wrap">
             <picture class="contact__img">
@@ -360,5 +365,6 @@ expectations of both users and the customer.
 <script type="module" src="./js/mobile.js"></script>
 <script type="module" src="./js/modal.js"></script>
 <script type="module" src="./js/thank.js"></script>
+<script type="module" src="./js/checkform.js"></script>
 </body>
 </html>
